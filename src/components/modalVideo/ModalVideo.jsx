@@ -72,9 +72,6 @@ const ModalVideo = () => {
                     <div className="contentModal">
                         <Button color="inherit" className="modal__backb" onClick={terminar}><ChevronLeftIcon fontSize='small'></ChevronLeftIcon> Volver</Button>
 
-                        {/* <div className="contentVideo">
-                            dsds
-                        </div> */}
                         <CardVideo disableButtonMo={true} index={indexMV} width={600} dataVideo={dataVQ[indexMV]}></CardVideo>
                         <div className="modal__contentButton">
                             <div className="legenda">

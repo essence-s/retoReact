@@ -1,7 +1,7 @@
 import CardVideo from "./cardVideo/CardVideo";
-import ContainerVQ from "./containerVQ/ContainerVQ";
-import ContainerVideoCard from "./containerVideoCard/ContainerVideoCard";
+import ContainerMaxWidth from "./containerMaxWidth/ContainerMaxWidth";
+import VideoQuestion from "./videoQuestion/VideoQuestion";
 import ModalVideo from "./modalVideo/ModalVideo";
 import VideoRecorder from "./videoRecorder/VideoRecorder";
 
-export { CardVideo, ContainerVQ, ContainerVideoCard, ModalVideo, VideoRecorder }
+export { CardVideo, ContainerMaxWidth, VideoQuestion, ModalVideo, VideoRecorder }

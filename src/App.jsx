@@ -1,26 +1,17 @@
-import { useState } from 'react'
 import './App.css'
-import { ContainerVQ, ContainerVideoCard, ModalVideo, VideoRecorder } from './components'
+import { ContainerMaxWidth, VideoQuestion, ModalVideo } from './components'
 import { VQProvider } from './context/VideoQuestionContext'
 function App() {
-
-
-
-
-
   return (
+    <VQProvider> {/* Provider context */}
 
-    <>
+      <ModalVideo></ModalVideo> {/*modal*/}
 
-      <VQProvider>
-        <ModalVideo></ModalVideo>
-        <ContainerVQ>
-          <ContainerVideoCard></ContainerVideoCard>
-        </ContainerVQ>
-      </VQProvider>
-    </>
+      <ContainerMaxWidth> {/*maximo de width 1200*/}
+        <VideoQuestion></VideoQuestion> {/* component de la vista principal*/}
+      </ContainerMaxWidth>
 
-
+    </VQProvider>
   )
 }
 

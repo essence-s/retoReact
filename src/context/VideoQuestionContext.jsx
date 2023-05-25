@@ -1,5 +1,5 @@
 import { createContext, useEffect, useRef, useState } from "react";
-import { keyBy } from "lodash";
+// import { keyBy } from "lodash";
 
 const VQContext = createContext()
 
@@ -40,7 +40,6 @@ let videoList = [
     // }
 ]
 
-// let videosArray = []
 
 // const videoListById = keyBy(videoList, "id")
 // console.log(videoListById)
@@ -48,21 +47,13 @@ let videoList = [
 const VQProvider = ({ children, data }) => {
     let [dataVQ, setDataVQ] = useState(videoList)
     let [videos, setVideos] = useState([])
-
-    const [open, setOpen] = useState(false)
-    const handleOpen = () => setOpen(true)
-    const handleClose = () => setOpen(false)
-
-    const [somethingRecording, setSomethingRecording] = useState(false)
-
     let [indexVQ, setIndexVQ] = useState()
 
-    // useEffect(() => {
+    const [open, setOpen] = useState(false)
+    const [somethingRecording, setSomethingRecording] = useState(false)
 
-    // }, [dataVQ])
-    // useEffect(() => {
-
-    // }, [videos])
+    const handleOpen = () => setOpen(true)
+    const handleClose = () => setOpen(false)
 
     return (
         <VQContext.Provider value={{
