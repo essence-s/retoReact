@@ -8,7 +8,7 @@ import { useEffect, useRef } from "react"
 
 
 
-const CardVideo = ({ dataVideo, width, index, showRecButton = true }) => {
+const CardVideo = ({ dataVideo, width, index, showRecButton = true, disableButtonMo = false }) => {
 
     let { handleOpen, indexVQ, setIndexVQ, dataVQ, setDataVQ, videos, setVideos, setSomethingRecording } = useVideoQuestion()
 
@@ -42,14 +42,14 @@ const CardVideo = ({ dataVideo, width, index, showRecButton = true }) => {
             <div className="video-card__video">
                 <VideoRecorder showRecButton={showRecButton} videos={videos} setVideos={setVideos} fff={fff} dataVideo={dataVideo} width={width}></VideoRecorder>
             </div>
-            <div className="video-card__question-box" onClick={handleOandM}>
+            <div className="video-card__question-box" onClick={disableButtonMo ? () => { } : handleOandM}>
                 <div className="video-card__question-square"></div>
                 <Button title={dataVideo.question}>{dataVideo.question}</Button>
                 {/* <div className="video-card__question-text">{dataVideo.question}</div> */}
                 <div className="video-card__question-square"></div>
             </div>
             {/* <button onClick={dino}>dsada</button> */}
-        </div>
+        </div >
     )
 }
 

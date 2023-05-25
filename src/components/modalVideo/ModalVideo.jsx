@@ -73,7 +73,7 @@ const ModalVideo = () => {
                         {/* <div className="contentVideo">
                             dsds
                         </div> */}
-                        <CardVideo index={indexMV} width={600} dataVideo={dataVQ[indexMV]}></CardVideo>
+                        <CardVideo disableButtonMo={true} index={indexMV} width={600} dataVideo={dataVQ[indexMV]}></CardVideo>
                         <div className="modal__contentButton">
 
                             <div className="modal__groupButtons">
