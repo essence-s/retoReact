@@ -29,6 +29,7 @@
     /* flex: 1; */
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .video-card__question-box .video-card__question-square {
@@ -38,5 +39,10 @@
 }
 
 .video-card__question-box .video-card__question-text {
-    margin: 2px;
+    /* margin: 2px; */
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 15px;
+    font-weight: 600;
+    color: #1d1d1f;
 }

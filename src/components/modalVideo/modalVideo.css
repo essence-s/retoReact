@@ -4,12 +4,29 @@
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
+    margin-top: 20px;
 
 }
+
+
 
 .modal__groupButtons {
     display: flex;
     justify-content: space-around;
+
+}
+
+
+
+.modal__groupButtons button {
+    display: flex;
+    justify-content: space-around;
+    color: #1e1d1f;
+    font-weight: 600;
+}
+
+.contentModal .contentModal button {
+    color: #1e1d1f;
 }
 
 .legenda {
